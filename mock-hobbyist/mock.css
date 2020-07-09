@@ -1,0 +1,30 @@
+html{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.live__scroll {
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+.live__scroll .row{
+    display:block;
+}
+.live__scroll .live__scroll--box {
+    display: inline-block;
+    float: none;
+    padding: 15px;
+}
+
+.fold{
+    width: 100vw;
+    height: 85vh;
+    background-image: url("img/craft-room.jpg");
+    background-size: 100vw;
+    background-repeat: no-repeat;
+}
