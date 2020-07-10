@@ -23,8 +23,8 @@ body{
 
 .fold{
     width: 100vw;
-    height: 85vh;
-    background-image: url("img/craft-room.jpg");
+    height: 100vh;
+    background-image: url("img/mountains.jpg");
     background-size: 100vw;
     background-repeat: no-repeat;
 }
