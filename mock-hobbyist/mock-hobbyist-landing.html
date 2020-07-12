@@ -14,33 +14,64 @@
 </head>
 <body>
 <div class="fold">
-    <h3>Hobbyist Logo</h3>
+    <div class="navbar-fixed">
+        <nav class="transparent">
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo black-text">Logo</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a class="black-text" href="sass.html">Sass</a></li>
+                    <li><a class="black-text" href="badges.html">Components</a></li>
+                    <li><a class="black-text" href="collapsible.html">JavaScript</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <h3 class="center-align">Hobbyist</h3>
 
-    <form class="" action="">
-        <button type="button" class="">Sign In</button>
-        <button type="button" class="">Register</button>
+    <form class="center-align" action="">
+        <button type="button" class="waves-effect waves-light btn">Sign In</button>
+        <button type="button" class="waves-effect waves-light btn">Register</button>
     </form>
 
 </div>
 
-<h1 class="d-flex justify-content-center mt-2">Discover Your Passions!</h1>
+<h1 class="center-align">Discover Your Passions!</h1>
 
 <h3 class="mt-5 ml-3">Outdoors</h3>
 <div class="live__scroll">
     <div class="row text-center ml-1">
 
-<!--        <div class="card col-8 col-md-4 live__scroll&#45;&#45;box">-->
-<!--            <a href=""><img-->
-<!--                    src="https://www.newsinlevels.com/wp-content/uploads/2019/06/GettyImages-487764222-e1495825614959-800x453.jpg"-->
-<!--                    class="card-img-top" alt="...">-->
-<!--                <div class="card-body">-->
-<!--                    <p class="card-text text-wrap">Title</p>-->
-<!--                </div>-->
-<!--            </a>-->
-<!--            <i class="far fa-heart d-flex justify-content-end"></i>-->
-<!--        </div>-->
+        <div class="col s11 m5 live__scroll--box">
+            <div class="card">
+                <div class="card-image">
+                    <img src="th:text='${h.images}'">
+                    <span class="card-title" th:text="${h.title}"></span>
+                    <a class="btn-floating halfway-fab waves-effect red"><i class="material-icons">favorite_border</i></a>
+                </div>
+                <div class="card-content">
+                    <p th:text="${h.description}"></p>
+                </div>
+            </div>
+        </div>
 
-        <div class="col s8 m4 live__scroll--box">
+
+
+
+
+
+        <div class="col s11 m5 live__scroll--box">
+            <div class="card">
+                <div class="card-image">
+                    <img src="img/mountains.jpg">
+                    <span class="card-title">Card Title</span>
+                    <a class="btn-floating halfway-fab waves-effect red"><i class="material-icons">favorite_border</i></a>
+                </div>
+                <div class="card-content">
+                    <p>Brief Description</p>
+                </div>
+            </div>
+        </div>
+        <div class="col s11 m5 live__scroll--box">
             <div class="card">
                 <div class="card-image">
                     <img src="img/mountains.jpg">
@@ -52,7 +83,7 @@
                 </div>
             </div>
         </div>
-        <div class="col s8 m4 live__scroll--box">
+        <div class="col s11 m5 live__scroll--box">
             <div class="card">
                 <div class="card-image">
                     <img src="img/mountains.jpg">
@@ -64,7 +95,7 @@
                 </div>
             </div>
         </div>
-        <div class="col s8 m4 live__scroll--box">
+        <div class="col s11 m5 live__scroll--box">
             <div class="card">
                 <div class="card-image">
                     <img src="img/mountains.jpg">
@@ -76,7 +107,7 @@
                 </div>
             </div>
         </div>
-        <div class="col s8 m4 live__scroll--box">
+        <div class="col s11 m5 live__scroll--box">
             <div class="card">
                 <div class="card-image">
                     <img src="img/mountains.jpg">
@@ -88,7 +119,227 @@
                 </div>
             </div>
         </div>
-        <div class="col s8 m4 live__scroll--box">
+        <div class="col s11 m5 live__scroll--box">
+            <div class="card">
+                <div class="card-image">
+                    <img src="img/mountains.jpg">
+                    <span class="card-title">Card Title</span>
+                    <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">favorite_border</i></a>
+                </div>
+                <div class="card-content">
+                    <p>Brief Description</p>
+                </div>
+            </div>
+        </div>
+        <div class="col s11 m5 live__scroll--box">
+            <div class="card">
+                <div class="card-image">
+                    <img src="img/mountains.jpg">
+                    <span class="card-title">Card Title</span>
+                    <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">favorite_border</i></a>
+                </div>
+                <div class="card-content">
+                    <p>Brief Description</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+</div>
+
+<h3 class="mt-5 ml-3">Crafts</h3>
+<div class="live__scroll">
+    <div class="row text-center ml-1">
+
+        <!--        <div class="card col-8 col-md-4 live__scroll&#45;&#45;box">-->
+        <!--            <a href=""><img-->
+        <!--                    src="https://www.newsinlevels.com/wp-content/uploads/2019/06/GettyImages-487764222-e1495825614959-800x453.jpg"-->
+        <!--                    class="card-img-top" alt="...">-->
+        <!--                <div class="card-body">-->
+        <!--                    <p class="card-text text-wrap">Title</p>-->
+        <!--                </div>-->
+        <!--            </a>-->
+        <!--            <i class="far fa-heart d-flex justify-content-end"></i>-->
+        <!--        </div>-->
+
+        <div class="col s11 m5 live__scroll--box">
+            <div class="card">
+                <div class="card-image">
+                    <img src="img/mountains.jpg">
+                    <span class="card-title">Card Title</span>
+                    <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">favorite_border</i></a>
+                </div>
+                <div class="card-content">
+                    <p>Brief Description</p>
+                </div>
+            </div>
+        </div>
+        <div class="col s11 m5 live__scroll--box">
+            <div class="card">
+                <div class="card-image">
+                    <img src="img/mountains.jpg">
+                    <span class="card-title">Card Title</span>
+                    <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">favorite_border</i></a>
+                </div>
+                <div class="card-content">
+                    <p>Brief Description</p>
+                </div>
+            </div>
+        </div>
+        <div class="col s11 m5 live__scroll--box">
+            <div class="card">
+                <div class="card-image">
+                    <img src="img/mountains.jpg">
+                    <span class="card-title">Card Title</span>
+                    <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">favorite_border</i></a>
+                </div>
+                <div class="card-content">
+                    <p>Brief Description</p>
+                </div>
+            </div>
+        </div>
+        <div class="col s11 m5 live__scroll--box">
+            <div class="card">
+                <div class="card-image">
+                    <img src="img/mountains.jpg">
+                    <span class="card-title">Card Title</span>
+                    <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">favorite_border</i></a>
+                </div>
+                <div class="card-content">
+                    <p>Brief Description</p>
+                </div>
+            </div>
+        </div>
+        <div class="col s11 m5 live__scroll--box">
+            <div class="card">
+                <div class="card-image">
+                    <img src="img/mountains.jpg">
+                    <span class="card-title">Card Title</span>
+                    <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">favorite_border</i></a>
+                </div>
+                <div class="card-content">
+                    <p>Brief Description</p>
+                </div>
+            </div>
+        </div>
+        <div class="col s11 m5 live__scroll--box">
+            <div class="card">
+                <div class="card-image">
+                    <img src="img/mountains.jpg">
+                    <span class="card-title">Card Title</span>
+                    <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">favorite_border</i></a>
+                </div>
+                <div class="card-content">
+                    <p>Brief Description</p>
+                </div>
+            </div>
+        </div>
+        <div class="col s11 m5 live__scroll--box">
+            <div class="card">
+                <div class="card-image">
+                    <img src="img/mountains.jpg">
+                    <span class="card-title">Card Title</span>
+                    <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">favorite_border</i></a>
+                </div>
+                <div class="card-content">
+                    <p>Brief Description</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+</div>
+
+<h3 class="mt-5 ml-3">Woodworking</h3>
+<div class="live__scroll">
+    <div class="row text-center ml-1">
+
+        <!--        <div class="card col-8 col-md-4 live__scroll&#45;&#45;box">-->
+        <!--            <a href=""><img-->
+        <!--                    src="https://www.newsinlevels.com/wp-content/uploads/2019/06/GettyImages-487764222-e1495825614959-800x453.jpg"-->
+        <!--                    class="card-img-top" alt="...">-->
+        <!--                <div class="card-body">-->
+        <!--                    <p class="card-text text-wrap">Title</p>-->
+        <!--                </div>-->
+        <!--            </a>-->
+        <!--            <i class="far fa-heart d-flex justify-content-end"></i>-->
+        <!--        </div>-->
+
+        <div class="col s11 m5 live__scroll--box">
+            <div class="card">
+                <div class="card-image">
+                    <img src="img/mountains.jpg">
+                    <span class="card-title">Card Title</span>
+                    <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">favorite_border</i></a>
+                </div>
+                <div class="card-content">
+                    <p>Brief Description</p>
+                </div>
+            </div>
+        </div>
+        <div class="col s11 m5 live__scroll--box">
+            <div class="card">
+                <div class="card-image">
+                    <img src="img/mountains.jpg">
+                    <span class="card-title">Card Title</span>
+                    <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">favorite_border</i></a>
+                </div>
+                <div class="card-content">
+                    <p>Brief Description</p>
+                </div>
+            </div>
+        </div>
+        <div class="col s11 m5 live__scroll--box">
+            <div class="card">
+                <div class="card-image">
+                    <img src="img/mountains.jpg">
+                    <span class="card-title">Card Title</span>
+                    <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">favorite_border</i></a>
+                </div>
+                <div class="card-content">
+                    <p>Brief Description</p>
+                </div>
+            </div>
+        </div>
+        <div class="col s11 m5 live__scroll--box">
+            <div class="card">
+                <div class="card-image">
+                    <img src="img/mountains.jpg">
+                    <span class="card-title">Card Title</span>
+                    <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">favorite_border</i></a>
+                </div>
+                <div class="card-content">
+                    <p>Brief Description</p>
+                </div>
+            </div>
+        </div>
+        <div class="col s11 m5 live__scroll--box">
+            <div class="card">
+                <div class="card-image">
+                    <img src="img/mountains.jpg">
+                    <span class="card-title">Card Title</span>
+                    <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">favorite_border</i></a>
+                </div>
+                <div class="card-content">
+                    <p>Brief Description</p>
+                </div>
+            </div>
+        </div>
+        <div class="col s11 m5 live__scroll--box">
+            <div class="card">
+                <div class="card-image">
+                    <img src="img/mountains.jpg">
+                    <span class="card-title">Card Title</span>
+                    <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">favorite_border</i></a>
+                </div>
+                <div class="card-content">
+                    <p>Brief Description</p>
+                </div>
+            </div>
+        </div>
+        <div class="col s11 m5 live__scroll--box">
             <div class="card">
                 <div class="card-image">
                     <img src="img/mountains.jpg">
