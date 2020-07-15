@@ -14,7 +14,25 @@ body{
     border: 1px solid black;
     height: 100%;
     border-radius: 5px;
+    background-color: white;
+    overflow: hidden;
 }
 
-.status{
+.rotate {
+
+    transform: rotate(-90deg);
+
+    margin-top: 300px;
+
+    color: white;
+
+}
+
+.ease {
+    transition: all 1s ease;
+}
+
+.content{
+    height: 100%;
+    overflow: auto;
 }
