@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>single hobby</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.css" media="screen,projection"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+<!--<form th:action="@{/hobby/create}" th:method="POST" th:object="${hobby}">-->
+<!--    Title:-->
+<!--    <input th:field="*{title}">-->
+<!--    Body:-->
+<!--    <input th:field="*{description}">-->
+
+<!--    Category:-->
+<!--    <div id="categories" th:each="c : ${categories}">-->
+<!--        <label>-->
+<!--            <input name="categories" type="checkbox" th:value="${c.id}" th:text="${c.name}"/>-->
+<!--        </label>-->
+<!--    </div>-->
+<!--    Patience:-->
+<!--    <th:block th:field="*{patience}">-->
+<!--        <select name="patience" th:type="radio">-->
+<!--            <option th:value="1">1</option>-->
+<!--            <option th:value="2">2</option>-->
+<!--            <option th:value="3">3</option>-->
+<!--            <option th:value="4">4</option>-->
+<!--        </select>-->
+<!--    </th:block>-->
+
+<!--    Difficulty:-->
+<!--    <th:block th:field="*{difficulty}">-->
+<!--        <select name="difficulty" th:type="radio">-->
+<!--            <option th:value="1">1</option>-->
+<!--            <option th:value="2">2</option>-->
+<!--            <option th:value="3">3</option>-->
+<!--            <option th:value="4">4</option>-->
+<!--        </select>-->
+<!--    </th:block>-->
+<!--    Cost:-->
+<!--    <th:block th:field="*{cost}">-->
+<!--        <select name="cost" th:type="radio">-->
+<!--            <option value="1">1</option>-->
+<!--            <option value="2">2</option>-->
+<!--            <option value="3">3</option>-->
+<!--            <option value="4">4</option>-->
+<!--        </select>-->
+<!--    </th:block>-->
+<!--    Upload Image-->
+<!--    <label for="upload"></label>
+<button id="upload" type="button" name="upload">Upload Image</button>
+<input id="stashFileStackURL" name="stashFileStackURL" value="replace" th:field="*{image}" type="hidden">
+<button class="btn btn-primary">Submit</button>
+<!--</form>-->
+<h1 class="center-align">CREATE A HOBBY FOR MILLIONS OF HUMANS TO OBSESS OVER</h1>
+<div class="container">
+    <div class="row">
+        <form class="col s12">
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="title" type="text" class="validate">
+                    <label for="title">Hobby Title</label>
+                </div>
+                <div class="input-field col s12">
+                    <textarea id="textarea1" class="materialize-textarea"></textarea>
+                    <label for="textarea1">Hobby Description</label>
+                </div>
+            </div>
+            <div class="input-field col s12">
+                <select>
+                    <option value="" disabled selected>Choose a Category</option>
+                    <option value="1">Recreation</option>
+                    <option value="2">Crafts</option>
+                    <option value="3">Technology</option>
+                    <option value="4">Special</option>
+                </select>
+                <label>Category</label>
+            </div>
+            <div class="input-field col s12">
+                <select>
+                    <option value="" disabled selected>Select a Patience Level Required</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+                <label>Patience:</label>
+            </div>
+            <div class="input-field col s12">
+                <select>
+                    <option value="" disabled selected>Select a Difficulty Level</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+                <label>Difficulty:</label>
+            </div>
+            <div class="input-field col s12">
+                <select>
+                    <option value="" disabled selected>Select a Starting Cost Level</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+                <label>Cost:</label>
+            </div>
+            <label for="upload"></label>
+            <button class="btn btn-primary" id="upload" type="button" name="upload">Upload Image</button>
+            <input id="stashFileStackURL" name="stashFileStackURL" value="replace" th:field="*{image}" type="hidden">
+            <button class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="materialize.js"></script>
+<script>
+    $(document).ready(function(){
+    $('select').formSelect();
+});
+</script>
+</body>
+</html>
